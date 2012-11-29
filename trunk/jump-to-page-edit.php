@@ -67,9 +67,9 @@ $blog_home = home_url();
 		<?php }
 
 add_action('save_page', 'jtpagei_save');
-	$pageID = $page->ID;
 
 	function jtpagei_save($pageID){
+		$pageID = $page->ID;
 	// called after a post or page is saved
 		if($parent_id = wp_is_post_revision($pageID)) {
 			$pageID = $parent_id;
