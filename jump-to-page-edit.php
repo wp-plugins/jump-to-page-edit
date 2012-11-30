@@ -90,3 +90,4 @@ add_action('save_page', 'jtpagei_save');
 			update_post_meta($pageID, $field_name, $newvalue);
 		}
 }
+?>
